@@ -1,0 +1,11 @@
+# One free web service: API + app on the same origin.
+services:
+  - type: web
+    name: finn
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m finn serve --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false

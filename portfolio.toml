@@ -1,0 +1,104 @@
+# The mock portfolio FINN watches. Edit freely — everything downstream reads this file.
+# Picked for spread: mega-caps and mid-caps, a bank and an NBFC (different P&L shape),
+# defence PSU, consumer, manufacturing, IT services, market infrastructure, chemicals.
+
+[[holding]]
+symbol = "RELIANCE"
+name = "Reliance Industries"
+sector = "Energy & telecom"
+
+[[holding]]
+symbol = "HDFCBANK"
+name = "HDFC Bank"
+sector = "Bank"
+
+[[holding]]
+symbol = "TCS"
+name = "Tata Consultancy Services"
+sector = "IT services"
+
+[[holding]]
+symbol = "ITC"
+name = "ITC"
+sector = "FMCG"
+
+[[holding]]
+symbol = "LT"
+name = "Larsen & Toubro"
+sector = "Engineering & construction"
+
+[[holding]]
+symbol = "BAJFINANCE"
+name = "Bajaj Finance"
+sector = "NBFC"
+
+[[holding]]
+symbol = "SUNPHARMA"
+name = "Sun Pharmaceutical"
+sector = "Pharma"
+
+[[holding]]
+symbol = "MARUTI"
+name = "Maruti Suzuki"
+sector = "Autos"
+
+[[holding]]
+symbol = "TITAN"
+name = "Titan Company"
+sector = "Consumer discretionary"
+
+[[holding]]
+symbol = "ETERNAL"
+name = "Eternal (Zomato)"
+sector = "Internet"
+
+[[holding]]
+symbol = "DMART"
+name = "Avenue Supermarts"
+sector = "Retail"
+
+[[holding]]
+symbol = "HAL"
+name = "Hindustan Aeronautics"
+sector = "Defence"
+
+[[holding]]
+symbol = "DIXON"
+name = "Dixon Technologies"
+sector = "Electronics manufacturing"
+
+[[holding]]
+symbol = "POLYCAB"
+name = "Polycab India"
+sector = "Cables & wires"
+
+[[holding]]
+symbol = "PERSISTENT"
+name = "Persistent Systems"
+sector = "IT services"
+
+[[holding]]
+symbol = "KPITTECH"
+name = "KPIT Technologies"
+sector = "Auto software"
+
+[[holding]]
+symbol = "CDSL"
+name = "Central Depository Services"
+sector = "Market infrastructure"
+
+[[holding]]
+symbol = "DEEPAKNTR"
+name = "Deepak Nitrite"
+sector = "Chemicals"
+
+[research]
+# Pre-built dossiers for the demo. The engine works on any NSE symbol screener.in covers.
+demo = ["DIXON", "ASIANPAINT", "CDSL", "IRCTC"]
+
+[alerts]
+# Defaults only — the investor changes these in the Watch tab.
+volume_multiple = 2.0
+volume_lookback_days = 20
+price_move_pct = 4.0
+always_surface = ["results", "M&A", "management_change", "fund_raise", "litigation", "credit_rating", "pledging"]

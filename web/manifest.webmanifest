@@ -1,0 +1,9 @@
+{
+  "name": "FINN",
+  "short_name": "FINN",
+  "start_url": "./#/brief",
+  "display": "standalone",
+  "background_color": "#E7ECE8",
+  "theme_color": "#E7ECE8",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
